@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Davis Center for Child Development</title>
+<meta name="description" content="Schedule a tour or inquire about enrollment at Davis Center for Child Development in Knoxville, TN.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-nav.svg" alt="Davis Center for Child Development">
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="staff.html">Staff</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-blue" href="#tour">Schedule a tour</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <rect y="3" width="22" height="2" rx="1" fill="currentColor"/>
+        <rect y="10" width="22" height="2" rx="1" fill="currentColor"/>
+        <rect y="17" width="22" height="2" rx="1" fill="currentColor"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="staff.html">Staff</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-blue" href="#tour">Schedule a tour</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Get in Touch</p>
+      <h1>We'd love to meet<br>your family.</h1>
+      <p class="lede">The best way to know if the Davis Center is right for your child is to come see it. Fill out the form to schedule a tour or ask about enrollment — we'll be in touch soon.</p>
+    </div>
+  </div>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="contact-section" id="tour">
+    <div class="container contact-grid">
+
+      <!-- ---- FORM ---- -->
+      <div>
+        <p class="eyebrow">Tour & Enrollment Inquiry</p>
+        <h2 style="margin-bottom: 1.75rem; font-size: clamp(1.5rem, 2.5vw, 2rem);">Tell us about your family.</h2>
+
+        <!--
+        FORMSPREE SETUP:
+        1. Go to formspree.io and create a free account.
+        2. Create a new form and copy your form endpoint (looks like https://formspree.io/f/XXXXXXXX).
+        3. Replace the action URL below with your Formspree endpoint.
+        4. Submissions will be emailed to office@daviscentercd.org.
+        -->
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          novalidate
+        >
+          <!-- Hidden fields for Formspree -->
+          <input type="hidden" name="_subject" value="Tour / Enrollment Inquiry — Davis Center">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="first-name">First name <span aria-hidden="true">*</span></label>
+                <input type="text" id="first-name" name="first_name" required autocomplete="given-name" placeholder="Jane">
+              </div>
+              <div class="form-field">
+                <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+                <input type="text" id="last-name" name="last_name" required autocomplete="family-name" placeholder="Smith">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com">
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(865) 555-0100">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="child-age">Child's age or age range <span aria-hidden="true">*</span></label>
+              <select id="child-age" name="child_age" required>
+                <option value="" disabled selected>Select an age range</option>
+                <option value="6w-8m">6 weeks – 8 months (Infant A)</option>
+                <option value="8m-15m">8 – 15 months (Infant B)</option>
+                <option value="15m-23m">15 – 23 months (Toddlers)</option>
+                <option value="24m-35m">24 – 35 months (Twos)</option>
+                <option value="3yr">3 years (Preschool One)</option>
+                <option value="3-4yr">3 – 4 years (Preschool Two)</option>
+                <option value="4-5yr">4 – 5 years (Pre-K)</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="start-date">Approximate start date</label>
+              <select id="start-date" name="start_date">
+                <option value="" disabled selected>When are you hoping to start?</option>
+                <option value="asap">As soon as possible</option>
+                <option value="1-3mo">Within 1–3 months</option>
+                <option value="3-6mo">3–6 months from now</option>
+                <option value="6mo+">More than 6 months out</option>
+                <option value="just-looking">Just exploring options</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Questions or anything we should know</label>
+              <textarea id="message" name="message" placeholder="Feel free to ask anything — about our programs, schedule, tuition, or anything else on your mind."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-blue" style="width: 100%; font-size: 1rem; padding: 0.85em 1.5em;">
+            Send inquiry
+          </button>
+          <p class="form-note">We'll respond within one business day. You can also reach us directly at <a href="mailto:office@daviscentercd.org">office@daviscentercd.org</a>.</p>
+        </form>
+
+        <div id="form-success" class="form-success">
+          <strong>&#10003; We got your message!</strong><br>
+          Thank you for reaching out. We'll be in touch within one business day to follow up about a tour or next steps.
+        </div>
+      </div>
+
+      <!-- ---- CONTACT INFO ---- -->
+      <div class="contact-info">
+
+        <div class="contact-block">
+          <h3>Location</h3>
+          <!--
+          ADDRESS NOTE:
+          The address on the physical sign reads "550 Orchard Pkwy, Knoxville, TN 37918."
+          The previous website listed "500 Hotel Road." Please verify which is correct
+          and update the address below (and in the footer of all pages) accordingly.
+          -->
+          <address style="font-style:normal; line-height:1.7; color:var(--ink-soft);">
+            550 Orchard Pkwy<br>
+            Knoxville, TN 37918
+          </address>
+        </div>
+
+        <div class="contact-block">
+          <h3>Email</h3>
+          <a href="mailto:office@daviscentercd.org">office@daviscentercd.org</a>
+        </div>
+
+        <div class="contact-block">
+          <h3>Hours</h3>
+          <!--
+          HOURS NOTE:
+          Update the hours below to match your actual operating hours.
+          -->
+          <p>Monday – Friday<br>6:30 am – 5:30 pm</p>
+          <p style="font-size:0.9rem; color:var(--ink-quiet);">Closed on major holidays. See our calendar for closure dates.</p>
+        </div>
+
+        <div class="contact-block">
+          <h3>Enrollment</h3>
+          <p>We accept children year-round as spots become available. Contact us to check current availability and get on our waitlist if needed.</p>
+          <a href="mailto:office@daviscentercd.org" class="btn btn-outline" style="margin-top:0.75rem; display:inline-block;">Email us directly</a>
+        </div>
+
+        <!-- Google Maps embed -->
+        <div class="map-embed">
+          <!--
+          MAP NOTE:
+          This embed shows 550 Orchard Pkwy, Knoxville, TN 37918.
+          If the correct address is different, update the q= parameter in the src URL below.
+          You can generate a fresh embed from maps.google.com → Share → Embed a map.
+          -->
+          <iframe
+            title="Davis Center location map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.5!2d-83.9621!3d36.0354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s550+Orchard+Pkwy%2C+Knoxville%2C+TN+37918!5e0!3m2!1sen!2sus!4v1"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VERSE ==================== -->
+  <section class="verse">
+    <div class="verse-inner">
+      <blockquote>
+        <span class="rooted">Rooted</span> and established in love.
+        <cite>Ephesians 3:17</cite>
+      </blockquote>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-nav.svg" alt="Davis Center for Child Development">
+        <p>Full-time, year-round faith-based childcare in Knoxville, Tennessee. Serving families since 1995.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="staff.html">Staff</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="programs.html#infant-a">Infant A</a>
+        <a href="programs.html#infant-b">Infant B</a>
+        <a href="programs.html#toddlers">Toddlers</a>
+        <a href="programs.html#twos">Twos</a>
+        <a href="programs.html#preschool">Preschool</a>
+        <a href="programs.html#prek">Pre-K</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          550 Orchard Pkwy<br>
+          Knoxville, TN 37918<br>
+          <br>
+          <a href="mailto:office@daviscentercd.org">office@daviscentercd.org</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Davis Center for Child Development. 501(c)(3) non-profit.</span>
+      <a href="#tour">Schedule a tour &rarr;</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
