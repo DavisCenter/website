@@ -172,13 +172,13 @@ p { max-width: 65ch; }
   display: flex;
   align-items: center;
   gap: 2rem;
-  height: 68px;
+  height: 76px;
   padding-inline: clamp(1rem, 4vw, 2.5rem);
   max-width: 1380px;
   margin-inline: auto;
 }
 .brand { display: flex; align-items: center; flex-shrink: 0; }
-.brand img { height: 44px; width: auto; }
+.brand img { height: 60px; width: auto; }
 
 .nav-links { display: flex; align-items: center; gap: 2rem; margin-left: auto; }
 .nav-links a {
@@ -762,6 +762,27 @@ textarea { min-height: 130px; resize: vertical; }
   margin: 0 auto 3rem;
 }
 .hero-v2 .hero-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+
+/* Verse note in hero */
+.faith-note {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  color: var(--navy);
+  opacity: 0.75;
+  margin: 0 auto 2.5rem;
+  letter-spacing: 0.01em;
+}
+.faith-note cite {
+  font-style: normal;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
 
 /* Gold accent mark below eyebrow */
 .hero-v2 .hr-gold { margin: 1.25rem auto 2rem; }
