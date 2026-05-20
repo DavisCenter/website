@@ -5,18 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Programs — Davis Center for Child Development</title>
 <meta name="description" content="Seven age-specific classrooms from 6 weeks through Pre-K. Full-time, year-round childcare programs at Davis Center in Knoxville, TN.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark-navy.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- ==================== NAV ==================== -->
+<!-- NAV -->
 <header class="nav">
   <div class="nav-inner">
     <a class="brand" href="index.html">
-      <img src="assets/logo-nav.svg" alt="Davis Center for Child Development">
+      <img src="assets/logo-compact-navy.svg" alt="Davis Center for Child Development">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="about.html">About</a>
@@ -24,7 +25,7 @@
       <a href="staff.html">Staff</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a class="btn btn-blue" href="contact.html#tour">Schedule a tour</a>
+    <a class="btn btn-navy" href="contact.html#tour">Schedule a tour</a>
     <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
         <rect y="3" width="22" height="2" rx="1" fill="currentColor"/>
@@ -38,13 +39,13 @@
     <a href="programs.html">Programs</a>
     <a href="staff.html">Staff</a>
     <a href="contact.html">Contact</a>
-    <a class="btn btn-blue" href="contact.html#tour">Schedule a tour</a>
+    <a class="btn btn-navy" href="contact.html#tour">Schedule a tour</a>
   </nav>
 </header>
 
 <main>
 
-  <!-- ==================== PAGE HERO ==================== -->
+  <!-- PAGE HERO -->
   <div class="page-hero">
     <div class="container">
       <p class="eyebrow">Programs</p>
@@ -53,15 +54,34 @@
     </div>
   </div>
 
-  <!-- ==================== PROGRAM CARDS ==================== -->
+  <!-- INTRO PHOTO ROW -->
+  <section style="padding: var(--space-xl) 0; background: var(--cream);">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; align-items: stretch;" data-reveal>
+        <div style="border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 16/9;">
+          <img src="images/classroom-wide.jpg" alt="Spacious classroom environment" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 3/4;">
+          <img src="images/baby-laughing.jpg" alt="Happy baby" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 3/4;">
+          <img src="images/child-smiling.jpg" alt="Smiling child" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM CARDS -->
   <section class="programs-intro">
     <div class="container">
-      <p class="eyebrow">All Programs</p>
-      <h2>From six weeks to kindergarten-ready.</h2>
-      <div class="programs-grid">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">All Programs</span>
+        <h2>From six weeks to kindergarten-ready.</h2>
+      </div>
+      <div class="programs-grid reveal-group">
 
         <!-- Infant A -->
-        <div class="program-card" id="infant-a">
+        <div class="program-card" id="infant-a" data-reveal>
           <span class="age-range">6 weeks – 8 months</span>
           <h3>Infant A</h3>
           <p>Our youngest children receive one-on-one attentiveness in a calm, predictable environment. We follow each baby's individual schedule for feeding, sleeping, and play — because consistency builds trust, and trust builds everything else.</p>
@@ -69,15 +89,15 @@
         </div>
 
         <!-- Infant B -->
-        <div class="program-card" id="infant-b">
+        <div class="program-card" id="infant-b" data-reveal>
           <span class="age-range">8 – 15 months</span>
           <h3>Infant B</h3>
           <p>As babies begin to sit, crawl, pull up, and take their first steps, everything changes. Our Infant B classroom is designed for exploration — safe spaces to move, sensory materials to discover, and caregivers who celebrate every milestone.</p>
-          <p>Language development begins here too: songs, narration, and responsive conversation are part of every hour.</p>
+          <p>Language development begins here: songs, narration, and responsive conversation are part of every hour.</p>
         </div>
 
         <!-- Toddlers -->
-        <div class="program-card" id="toddlers">
+        <div class="program-card" id="toddlers" data-reveal>
           <span class="age-range">15 – 23 months</span>
           <h3>Toddlers</h3>
           <p>Big strides in a little body. Toddlers are learning to walk confidently, use words, and assert their independence — all at once. Our toddler room is structured to support that energy with clear routines, gentle guidance, and lots of movement.</p>
@@ -85,7 +105,7 @@
         </div>
 
         <!-- Twos -->
-        <div class="program-card" id="twos">
+        <div class="program-card" id="twos" data-reveal>
           <span class="age-range">24 – 35 months</span>
           <h3>Twos</h3>
           <p>Language is exploding. So is personality. Two-year-olds are learning to communicate, cooperate, and navigate big feelings — with adult support they can count on. Our Twos classroom provides structure, warmth, and plenty of imaginative play.</p>
@@ -93,7 +113,7 @@
         </div>
 
         <!-- Preschool One -->
-        <div class="program-card" id="preschool">
+        <div class="program-card" id="preschool" data-reveal>
           <span class="age-range">3 years</span>
           <h3>Preschool One</h3>
           <p>Three-year-olds are social beings ready to learn alongside peers. Preschool One focuses on cooperative play, early literacy, numbers, and the beginning of structured learning — all delivered with joy and patience.</p>
@@ -101,47 +121,61 @@
         </div>
 
         <!-- Preschool Two -->
-        <div class="program-card">
+        <div class="program-card" data-reveal>
           <span class="age-range">3 – 4 years</span>
           <h3>Preschool Two</h3>
           <p>Children in Preschool Two are building on what they've learned — longer attention spans, richer language, and the ability to work through problems with peers. We expand on early literacy and math in ways that feel like play.</p>
-          <p>Children at this stage are ready for more challenge, and we meet them there — while keeping the environment warm and supportive.</p>
+          <p>Ready for more challenge. Still in an environment that's warm and supportive.</p>
         </div>
 
         <!-- Pre-K -->
-        <div class="program-card" id="prek">
+        <div class="program-card" id="prek" data-reveal>
           <span class="age-range">4 – 5 years</span>
           <h3>Pre-K</h3>
           <p>Our Pre-K classroom prepares children for kindergarten — not just with letters and numbers, but with the confidence, curiosity, and love of learning that makes school something to look forward to.</p>
-          <p>We focus on school-readiness skills: following directions, working in groups, expressing ideas clearly, and managing transitions. Children leave the Davis Center ready — and excited — for what's next.</p>
+          <p>School-readiness skills: following directions, working in groups, expressing ideas, managing transitions. Children leave ready — and excited.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ==================== TUITION NOTE ==================== -->
+  <!-- LEARNING PHOTO FEATURE -->
+  <section style="padding: var(--space-lg) 0 var(--space-xl); background: var(--cream-deep);">
+    <div class="container">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: stretch;" data-reveal>
+        <div style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 16/9;">
+          <img src="images/child-learning.jpg" alt="Children learning together" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 16/9;">
+          <img src="images/infant-activity.jpg" alt="Infant in activity" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUITION NOTE -->
   <section class="tuition-note">
     <div class="container tuition-note-inner">
-      <div>
+      <div data-reveal="scale-up">
         <div class="tuition-note-num">At&nbsp;or<br>below</div>
       </div>
-      <div class="tuition-note-copy">
+      <div class="tuition-note-copy" data-reveal="fade-right">
         <p class="eyebrow">Tuition &amp; Enrollment</p>
         <h2>Area average rates. Above-average care.</h2>
         <p>We're a 501(c)(3) non-profit. Every dollar we take in goes back into the program — to staffing, to the environment, and to keeping our rates accessible to working families. We keep our tuition at or below the Knoxville area average, without cutting corners on quality.</p>
         <p>For current rates and enrollment availability, <a href="contact.html">contact us directly</a>. We're happy to answer your questions and schedule a tour so you can see the center for yourself.</p>
         <div style="margin-top: 1.75rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a class="btn btn-green" href="contact.html#tour">Schedule a tour</a>
-          <a class="btn btn-outline" href="contact.html">Ask about enrollment</a>
+          <a class="btn btn-gold" href="contact.html#tour">Schedule a tour</a>
+          <a class="btn btn-outline-light" href="contact.html">Ask about enrollment</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== VERSE ==================== -->
+  <!-- VERSE -->
   <section class="verse">
-    <div class="verse-inner">
+    <div class="verse-inner" data-reveal>
       <blockquote>
         <span class="rooted">Rooted</span> and established in love.
         <cite>Ephesians 3:17</cite>
@@ -151,12 +185,12 @@
 
 </main>
 
-<!-- ==================== FOOTER ==================== -->
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="assets/logo-nav.svg" alt="Davis Center for Child Development">
+        <img src="assets/logo-compact-white.svg" alt="Davis Center for Child Development">
         <p>Full-time, year-round faith-based childcare in Knoxville, Tennessee. Serving families since 1995.</p>
       </div>
       <div class="footer-col">
@@ -180,15 +214,14 @@
         <h4>Contact</h4>
         <address>
           550 Orchard Pkwy<br>
-          Knoxville, TN 37918<br>
-          <br>
+          Knoxville, TN 37918<br><br>
           <a href="mailto:office@daviscentercd.org">office@daviscentercd.org</a>
         </address>
       </div>
     </div>
     <div class="footer-bottom">
       <span>&copy; 2025 Davis Center for Child Development. 501(c)(3) non-profit.</span>
-      <a href="contact.html">Schedule a tour &rarr;</a>
+      <a href="contact.html#tour">Schedule a tour &rarr;</a>
     </div>
   </div>
 </footer>

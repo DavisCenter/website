@@ -5,18 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Davis Center for Child Development</title>
 <meta name="description" content="Schedule a tour or inquire about enrollment at Davis Center for Child Development in Knoxville, TN.">
+<link rel="icon" type="image/svg+xml" href="assets/logo-mark-navy.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- ==================== NAV ==================== -->
+<!-- NAV -->
 <header class="nav">
   <div class="nav-inner">
     <a class="brand" href="index.html">
-      <img src="assets/logo-nav.svg" alt="Davis Center for Child Development">
+      <img src="assets/logo-compact-navy.svg" alt="Davis Center for Child Development">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="about.html">About</a>
@@ -24,7 +25,7 @@
       <a href="staff.html">Staff</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a class="btn btn-blue" href="#tour">Schedule a tour</a>
+    <a class="btn btn-navy" href="#tour">Schedule a tour</a>
     <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
         <rect y="3" width="22" height="2" rx="1" fill="currentColor"/>
@@ -38,13 +39,13 @@
     <a href="programs.html">Programs</a>
     <a href="staff.html">Staff</a>
     <a href="contact.html">Contact</a>
-    <a class="btn btn-blue" href="#tour">Schedule a tour</a>
+    <a class="btn btn-navy" href="#tour">Schedule a tour</a>
   </nav>
 </header>
 
 <main>
 
-  <!-- ==================== PAGE HERO ==================== -->
+  <!-- PAGE HERO -->
   <div class="page-hero">
     <div class="container">
       <p class="eyebrow">Get in Touch</p>
@@ -53,19 +54,19 @@
     </div>
   </div>
 
-  <!-- ==================== CONTACT SECTION ==================== -->
+  <!-- CONTACT SECTION -->
   <section class="contact-section" id="tour">
     <div class="container contact-grid">
 
-      <!-- ---- FORM ---- -->
-      <div>
-        <p class="eyebrow">Tour & Enrollment Inquiry</p>
+      <!-- FORM -->
+      <div data-reveal="fade-left">
+        <p class="eyebrow">Tour &amp; Enrollment Inquiry</p>
         <h2 style="margin-bottom: 1.75rem; font-size: clamp(1.5rem, 2.5vw, 2rem);">Tell us about your family.</h2>
 
         <!--
         FORMSPREE SETUP:
         1. Go to formspree.io and create a free account.
-        2. Create a new form and copy your form endpoint (looks like https://formspree.io/f/XXXXXXXX).
+        2. Create a new form and copy your form endpoint.
         3. Replace the action URL below with your Formspree endpoint.
         4. Submissions will be emailed to office@daviscentercd.org.
         -->
@@ -75,7 +76,6 @@
           method="POST"
           novalidate
         >
-          <!-- Hidden fields for Formspree -->
           <input type="hidden" name="_subject" value="Tour / Enrollment Inquiry — Davis Center">
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
@@ -135,7 +135,7 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn-blue" style="width: 100%; font-size: 1rem; padding: 0.85em 1.5em;">
+          <button type="submit" class="btn btn-navy" style="width: 100%; font-size: 1rem; padding: 0.85em 1.5em; border-radius: var(--radius-sm);">
             Send inquiry
           </button>
           <p class="form-note">We'll respond within one business day. You can also reach us directly at <a href="mailto:office@daviscentercd.org">office@daviscentercd.org</a>.</p>
@@ -147,18 +147,17 @@
         </div>
       </div>
 
-      <!-- ---- CONTACT INFO ---- -->
-      <div class="contact-info">
+      <!-- CONTACT INFO -->
+      <div class="contact-info" data-reveal="fade-right">
 
         <div class="contact-block">
           <h3>Location</h3>
           <!--
           ADDRESS NOTE:
           The address on the physical sign reads "550 Orchard Pkwy, Knoxville, TN 37918."
-          The previous website listed "500 Hotel Road." Please verify which is correct
-          and update the address below (and in the footer of all pages) accordingly.
+          Verify this is correct and update here and in all page footers if needed.
           -->
-          <address style="font-style:normal; line-height:1.7; color:var(--ink-soft);">
+          <address style="line-height:1.7; color:var(--ink-soft);">
             550 Orchard Pkwy<br>
             Knoxville, TN 37918
           </address>
@@ -172,11 +171,10 @@
         <div class="contact-block">
           <h3>Hours</h3>
           <!--
-          HOURS NOTE:
-          Update the hours below to match your actual operating hours.
+          HOURS NOTE: Update these to match your actual operating hours.
           -->
           <p>Monday – Friday<br>6:30 am – 5:30 pm</p>
-          <p style="font-size:0.9rem; color:var(--ink-quiet);">Closed on major holidays. See our calendar for closure dates.</p>
+          <p style="font-size:0.9rem; color:var(--ink-quiet); margin-top:.5rem;">Closed on major holidays. See our calendar for closure dates.</p>
         </div>
 
         <div class="contact-block">
@@ -189,9 +187,8 @@
         <div class="map-embed">
           <!--
           MAP NOTE:
-          This embed shows 550 Orchard Pkwy, Knoxville, TN 37918.
-          If the correct address is different, update the q= parameter in the src URL below.
-          You can generate a fresh embed from maps.google.com → Share → Embed a map.
+          This embed uses 550 Orchard Pkwy, Knoxville, TN 37918.
+          To update: go to maps.google.com → Share → Embed a map → replace the src URL.
           -->
           <iframe
             title="Davis Center location map"
@@ -206,9 +203,9 @@
     </div>
   </section>
 
-  <!-- ==================== VERSE ==================== -->
+  <!-- VERSE -->
   <section class="verse">
-    <div class="verse-inner">
+    <div class="verse-inner" data-reveal>
       <blockquote>
         <span class="rooted">Rooted</span> and established in love.
         <cite>Ephesians 3:17</cite>
@@ -218,12 +215,12 @@
 
 </main>
 
-<!-- ==================== FOOTER ==================== -->
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="assets/logo-nav.svg" alt="Davis Center for Child Development">
+        <img src="assets/logo-compact-white.svg" alt="Davis Center for Child Development">
         <p>Full-time, year-round faith-based childcare in Knoxville, Tennessee. Serving families since 1995.</p>
       </div>
       <div class="footer-col">
@@ -247,8 +244,7 @@
         <h4>Contact</h4>
         <address>
           550 Orchard Pkwy<br>
-          Knoxville, TN 37918<br>
-          <br>
+          Knoxville, TN 37918<br><br>
           <a href="mailto:office@daviscentercd.org">office@daviscentercd.org</a>
         </address>
       </div>
