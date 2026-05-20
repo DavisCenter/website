@@ -698,3 +698,129 @@ textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 440px) {
   .staff-grid { grid-template-columns: 1fr; }
 }
+
+/* ================================================================
+   OPTION-2 — SPROUT WATERMARK + EDITORIAL HERO
+   Technique: fixed sprout mark behind everything; transparent hero
+   lets the mark show through; solid sections scroll over it.
+   Activated by adding class="has-sprout-bg" to <body>.
+   ================================================================ */
+
+/* 1 · Fixed sprout watermark */
+.sprout-bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 78vmin;
+  max-width: 820px;
+  z-index: 0;
+  opacity: 0.09;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform;
+}
+.sprout-bg img { width: 100%; height: auto; display: block; }
+
+/* 2 · Nav glass effect over the sprout */
+.has-sprout-bg .nav {
+  z-index: 200;
+  background: rgba(244,238,230,0.90);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom-color: rgba(237,230,218,0.7);
+}
+
+/* 3 · Editorial hero — transparent so sprout shows through */
+.hero-v2 {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  padding: 8rem clamp(1.25rem, 5vw, 3rem) 6rem;
+}
+.hero-v2 .eyebrow { color: var(--navy); margin-bottom: 1.5rem; }
+.hero-v2 h1 {
+  font-size: clamp(3.2rem, 9vw, 7.2rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  max-width: 12ch;
+  margin: 0 auto 2.5rem;
+}
+.hero-v2 h1 em { color: var(--navy); font-style: italic; }
+.hero-v2 .lede {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  max-width: 50ch;
+  margin: 0 auto 3rem;
+}
+.hero-v2 .hero-ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+
+/* Gold accent mark below eyebrow */
+.hero-v2 .hr-gold { margin: 1.25rem auto 2rem; }
+
+/* 4 · Animated scroll cue */
+.scroll-cue {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--ink-quiet);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  animation: scroll-bounce 2.4s ease-in-out infinite;
+}
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: .7; }
+  55%       { transform: translateX(-50%) translateY(8px); opacity: 1; }
+}
+
+/* 5 · All sections below hero get solid bg + z-index to cover sprout */
+.has-sprout-bg .marquee-bar,
+.has-sprout-bg .section-intro,
+.has-sprout-bg .trust-strip,
+.has-sprout-bg .programs-preview,
+.has-sprout-bg .about-teaser,
+.has-sprout-bg .stats-bar,
+.has-sprout-bg .cta-band,
+.has-sprout-bg .verse,
+.has-sprout-bg .site-footer,
+.has-sprout-bg .page-hero,
+.has-sprout-bg .about-mission,
+.has-sprout-bg .about-faith,
+.has-sprout-bg .about-history,
+.has-sprout-bg .staff-intro,
+.has-sprout-bg .contact-section,
+.has-sprout-bg .programs-intro,
+.has-sprout-bg .tuition-note {
+  position: relative;
+  z-index: 2;
+}
+
+/* 6 · Bigger inner-page hero for sprout pages */
+.has-sprout-bg .page-hero {
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 7 · Mobile tweaks */
+@media (max-width: 600px) {
+  .sprout-bg { width: 95vw; opacity: 0.07; }
+  .hero-v2 h1 { font-size: 3rem; }
+}

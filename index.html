@@ -12,7 +12,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="has-sprout-bg">
+
+<!-- SPROUT WATERMARK (fixed, behind everything) -->
+<div class="sprout-bg" aria-hidden="true">
+  <img src="assets/logo-mark-navy.svg" alt="">
+</div>
 
 <!-- NAV -->
 <header class="nav">
@@ -46,26 +51,29 @@
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg">
-      <img src="images/hero.jpg" alt="Children engaged in learning at Davis Center" loading="eager">
-    </div>
-    <div class="hero-content container">
+  <!-- HERO V2 — transparent so sprout shows through -->
+  <section class="hero-v2">
+    <div>
       <p class="eyebrow" data-reveal>Knoxville, Tennessee · Est. 1995</p>
+      <hr class="hr-gold" data-reveal>
       <h1 data-reveal>Where little ones<br><em>learn to love</em><br>learning.</h1>
-      <p class="lede" data-reveal>Full-time, year-round childcare for children 6 weeks through Pre-K. Faith-based, family-focused, and built for the way kids actually grow.</p>
+      <p class="lede" data-reveal>Full-time, year-round faith-based childcare for children 6 weeks through Pre-K. Built around how kids actually grow.</p>
       <div class="hero-ctas" data-reveal>
-        <a class="btn btn-gold" href="contact.html#tour">Schedule a tour</a>
-        <a class="btn btn-outline-light" href="programs.html">View our programs</a>
+        <a class="btn btn-navy" href="contact.html#tour">Schedule a tour</a>
+        <a class="btn btn-outline" href="programs.html">View our programs</a>
       </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <svg width="14" height="9" viewBox="0 0 14 9" fill="none">
+        <path d="M1 1l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </div>
   </section>
 
-  <!-- MARQUEE TICKER -->
+  <!-- MARQUEE TICKER — solid navy, covers sprout -->
   <div class="marquee-bar" aria-hidden="true">
     <div class="marquee-track">
-      <!-- Set 1 -->
       <span class="marquee-item"><strong>30+ years</strong> <span class="marquee-dot"></span></span>
       <span class="marquee-item">Serving Knoxville families <span class="marquee-dot"></span></span>
       <span class="marquee-item"><strong>7 classrooms</strong> <span class="marquee-dot"></span></span>
@@ -74,7 +82,6 @@
       <span class="marquee-item">Faith-based care <span class="marquee-dot"></span></span>
       <span class="marquee-item"><strong>Year-round</strong> enrollment <span class="marquee-dot"></span></span>
       <span class="marquee-item">Low staff-to-child ratios <span class="marquee-dot"></span></span>
-      <!-- Set 2 (duplicate for seamless loop) -->
       <span class="marquee-item"><strong>30+ years</strong> <span class="marquee-dot"></span></span>
       <span class="marquee-item">Serving Knoxville families <span class="marquee-dot"></span></span>
       <span class="marquee-item"><strong>7 classrooms</strong> <span class="marquee-dot"></span></span>
